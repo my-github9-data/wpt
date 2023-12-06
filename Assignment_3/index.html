@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Registration Form</h1>
+      <div class="cont">
+        <div>
+          <table>
+            <tbody>
+              <tr >
+                <td>Name</td>
+                <td colspan="3">
+                  <input type="text" placeholder="Enter Name" required />
+                </td>
+              </tr>
+              <tr>
+                <td>BirthDate</td>
+                <td colspan="3">
+                  <input type="date" placeholder="dd/MM/yyyy" required />
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td colspan="3">
+                  <input type="email" placeholder="abc@gmail.com" />
+                </td>
+              </tr>
+              <tr>
+                <td>Paasword</td>
+                <td colspan="3">
+                  <input type="password" placeholder="*******" />
+                </td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>
+                  <select name="State" >
+                    <option value="MH">Maharashtra</option>
+                    <option value="CG">Chhattisgarh</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="GJ">Gujarat</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="district">
+                    <option>Durg</option>
+                    <option>Balod</option>
+                    <option>Raipur</option>
+                    <option>Kawardha</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="city">
+                    <option>Bhilai</option>
+                    <option>Raipur</option>
+                    <option>Durg</option>
+                    <option>Bemetara</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>State</td>
+                <td>District</td>
+                <td>City</td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td colspan="3">
+                  Male<input type="radio" name="gender" /> Female<input
+                    type="radio"
+                    name="gender"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Upload Photo</td>
+                <td colspan="3"><input type="file" /></td>
+              </tr>
+              <tr>
+                <td>Select Course</td>
+                <td colspan="3">
+                  <select>
+                    <option>DAC</option>
+                    <option>DMC</option>
+                    <option>DITIS</option>
+                    <option>DESD</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="submit" value="Register" /></td>
+                <td colspan="2"><input type="submit" value="Clear" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.cont {
+  display: flex;
+}
+.division {
+  width: 50%;
+
+  text-align: center;
+}
+.fields {
+  margin-bottom: 20px;
+}
+.img-box {
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.headings {
+  color: blue;
+  font-size:18px ;
+}
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+input[type="number"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+  }
+  input[type="email"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+  }
+  

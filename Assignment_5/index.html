@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Registration</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>Customer Registration</h1>
+      <table style="width: 600px">
+        <tr>
+          <td>Cnum</td>
+          <td><input type="number" placeholder="1" id="num" /></td>
+          <td>
+            <div style="color: red; width: 200px" id="cusNumberErrorMsg"></div>
+          </td>
+        </tr>
+        <tr>
+                <td>Cname</td>
+                <td><input type="text" placeholder="sarvesh" id="nme" /></td>
+                <td>
+                    <div style="color: red; width: 200px"  id="nameErrorMsg"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="sarvesh@gmail.com" id="eMail" />
+                </td>
+                <td><div style="color: red; width: 200px"id="eMailErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" placeholder="" id="password" />
+                </td>
+                <td> <div style="color: red; width: 200px"  id="passwordErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" placeholder="" id="confirmPassword" />
+                </td>
+                <td> <div style="color: red; width: 200px"  id="confirmPasswordErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>Mobile_no</td>
+                <td><input type="number" placeholder="" id="mobileNo" /></td>
+                <td> <div style="color: red; width: 200px"  id="mobErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" placeholder="" id="city" /></td>
+                <td > <div style="color: red; width: 200px"  id="cityErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" placeholder="" id="state" /></td>
+                <td> <div style="color: red; width: 200px"  id="stateErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>Pincode</td>
+                <td><input type="number" placeholder="" id="pinCode" /></td>
+                <td> <div style="color: red; width: 200px"  id="pinErrorMsg"></div></td>
+            </tr>
+            <tr>
+                <td>Request_Payment_Mode</td>
+                <td>
+                    <label for="credit">Credit</label><input type="checkbox" id="credit" />
+                    <label for="debit">Dedit</label><input type="checkbox" id="debit" /> <label
+                        for="upi">UPI</label><input type="checkbox" id="upi" />
+                </td>
+                <td id="requestErrorMsg"> <div style="color: red; width: 200px"  id="requestErrorMsg"></div></td>
+            </tr>
+        <tr>
+          <td colspan="3"><input type="button" value="Submit" onclick="DoRegister()" /></td>
+        </tr>
+      </table>
+    </center>
+    <script>
+      function DoRegister() {
+        validate("num", "cusNumberErrorMsg", "Please enter valid customer number");
+
+        validate("nme", "nameErrorMsg", "Please enter Valid Name");
+
+        validate("eMail", "eMailErrorMsg", "Please enter email");
+
+        validate("password", "passwordErrorMsg", "Please enter password");
+
+        validate("confirmPassword", "confirmPasswordErrorMsg", "please enter password");
+
+        validate("mobileNo", "mobErrorMsg", "Please enter mobile number");
+
+        validate("city", "cityErrorMsg", "Please enter city name");
+
+        validate("state", "stateErrorMsg", "Please enter state name");
+
+        validate("pinCode", "pinErrorMsg", "Please enter pincode");
+
+        validate("request", "requestErrorMsg", "Please select payment mode");
+
+
+      }
+    </script>
+    <script src="validation.js"></script>
+  </body>
+</html>

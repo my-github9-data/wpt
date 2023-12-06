@@ -1,0 +1,11 @@
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.sun{
+    margin-right: 50px;
+}
+td{
+    font-size: 18px;
+    height: 25px;
+}
